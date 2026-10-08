@@ -46,7 +46,7 @@ function Logo() {
   return (
     <a href="#" className="leading-none">
       <span className="block font-display text-2xl font-semibold tracking-tight">Studio <em className="text-brand">Santana</em></span>
-      <span className="mt-1 block text-[10px] uppercase tracking-[0.3em] text-muted-foreground">Beleza · Várzea, Recife</span>
+      <span className="mt-1 block text-[10px] uppercase tracking-[0.3em] whitespace-nowrap text-muted-foreground">Beleza · Várzea, Recife</span>
     </a>
   );
 }

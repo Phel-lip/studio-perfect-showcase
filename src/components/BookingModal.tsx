@@ -17,7 +17,7 @@ export function BookingModal({ open, initialService, onClose }: { open: boolean;
   const hasPros = (service?.pros.length ?? 0) > 0;
   const steps: StepKey[] = hasPros ? ["service", "pro", "prefs", "summary"] : ["service", "prefs", "summary"];
   const idx = steps.indexOf(step);
-  const next = () => setStep(steps[idx + 1]);
+  const next = () => setStep(steps[idx + 1]!);
 
   useEffect(() => {
     if (!open) return;
@@ -60,7 +60,7 @@ export function BookingModal({ open, initialService, onClose }: { open: boolean;
       <div className="flex max-h-[92dvh] w-full max-w-lg flex-col overflow-hidden rounded-t-3xl bg-card shadow-soft sm:rounded-3xl" onClick={(e) => e.stopPropagation()}>
         <div className="flex items-center justify-between border-b px-5 py-4">
           <div className="flex items-center gap-2">
-            {idx > 0 && <button onClick={() => setStep(steps[idx - 1])} aria-label="Voltar" className="rounded-full p-1.5 hover:bg-muted"><ChevronLeft className="h-5 w-5" /></button>}
+            {idx > 0 && <button onClick={() => setStep(steps[idx - 1]!)} aria-label="Voltar" className="rounded-full p-1.5 hover:bg-muted"><ChevronLeft className="h-5 w-5" /></button>}
             <div>
               <p className="text-xs uppercase tracking-[0.2em] text-primary">Solicitação de horário</p>
               <h3 className="font-display text-2xl">{LABELS[step]}</h3>
