@@ -173,7 +173,6 @@ function Services({ onBook }: { onBook: (id: string) => void }) {
           Não sabe qual escolher?{" "}
           <a href={WA_HELP} target="_blank" rel="noopener noreferrer" className="font-medium text-primary underline-offset-4 hover:underline">Fale com o salão.</a>
         </p>
-        <p className="mt-2 text-center text-xs text-muted-foreground/80">Fotos dos cards ilustrativas.</p>
       </div>
     </section>
   );
@@ -184,7 +183,7 @@ function BeforeAfter() {
   return (
     <section id="antes-depois" className="scroll-mt-20 py-16 md:py-24">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 md:grid-cols-2">
-        <SectionTitle eyebrow="Antes e depois" title={<>Arraste e veja <em className="text-brand">a diferença.</em></>} sub="Imagens ilustrativas." />
+        <SectionTitle eyebrow="Antes e depois" title={<>Arraste e veja <em className="text-brand">a diferença.</em></>} sub="Coloração aplicada, brilho de volta e fios alinhados: o cuidado que o seu cabelo merece aqui no salão." />
         <div className="relative aspect-square w-full select-none overflow-hidden rounded-3xl shadow-soft">
           <img src={after} alt="Depois" className="absolute inset-0 h-full w-full object-cover" />
           <img src={before} alt="Antes" className="absolute inset-0 h-full w-full object-cover" style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }} />
