@@ -54,8 +54,8 @@
   --color-plum: var(--plum);
   --color-plum-foreground: var(--plum-foreground);
   --color-blush: var(--blush);
-  --font-display: "Cormorant Garamond", Georgia, serif;
-  --font-sans: "Jost", system-ui, sans-serif;
+  --font-display: "Bodoni Moda", Georgia, serif;
+  --font-sans: "Manrope", system-ui, sans-serif;
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
