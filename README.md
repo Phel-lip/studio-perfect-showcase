@@ -3,7 +3,7 @@
 Implement exactly the screenshot and nothing else
 
 This project was built with [Lovable](https://lovable.dev).
-
+a
 **Live app**: https://studio-perfect-showcase.lovable.app
 
 ## Build with Lovable
