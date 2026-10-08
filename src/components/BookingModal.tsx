@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { X, Check, ChevronLeft, MessageCircle, Info } from "lucide-react";
-import { SALON, SERVICES, PERIODS, NO_PREF, fmtDate, buildBookingMessage, waLink, todayLocal } from "@/lib/salon";
+import { SERVICES, PERIODS, NO_PREF, fmtDate, buildBookingMessage, waLink, todayLocal } from "@/lib/salon";
 
 type StepKey = "service" | "pro" | "prefs" | "summary";
 const LABELS: Record<StepKey, string> = { service: "Serviço", pro: "Profissional", prefs: "Preferências", summary: "Resumo" };
